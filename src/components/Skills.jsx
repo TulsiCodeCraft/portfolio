@@ -6,7 +6,7 @@ const SkillsSection = () => {
     {
       category: "Frontend",
       icon: "🎨",
-      skills: ["HTML", "CSS", "Tailwind", "Javascript", "ReactJs", "Vite", "Typescript", "NextJs", "Redux"],
+      skills: ["HTML", "CSS", "Tailwind", "Javascript", "ReactJs", "Typescript", "NextJs", "Redux"],
       gradient: "from-pink-500 to-violet-500"
     },
     {
@@ -24,7 +24,7 @@ const SkillsSection = () => {
     {
       category: "Programming Languages",
       icon: "💻",
-      skills: ["C/C++", "Javascript", "Python", "Typescript"],
+      skills: [ "Java", "Javascript", "Typescript"],
       gradient: "from-orange-500 to-red-500"
     },
     {

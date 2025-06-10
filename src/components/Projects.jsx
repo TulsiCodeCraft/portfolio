@@ -10,7 +10,7 @@ const ProjectsSection = () => {
     {
       id: 1,
       name: "Zeecare",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
+      description: "A doctor appointment and patient management system for Zeecare Medical, featuring multi-department scheduling and a doctor admin panel.",
       image: "/src/assets/images/zeecare.png",
       liveUrl: "https://demo-ecommerce.com",
       githubUrl: "https://github.com/username/ecommerce",
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
     {
       id: 2,
       name: "Educrew",
-      description: "Collaborative task management tool with real-time updates and team features",
+      description: "A collaborative study platform where users can form groups, assign tasks, and track study progress for better virtual learning.",
       image: "/src/assets/images/educrew.png",
       liveUrl: "https://demo-taskapp.com",
       githubUrl: "https://github.com/username/taskapp",
@@ -27,80 +27,82 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      name: "Meeting Summarizer",
-      description: "Real-time weather application with interactive maps and detailed forecasts",
-      image: "/src/assets/images/vidsummaryai.png",
-      liveUrl: "https://demo-weather.com",
-      githubUrl: "https://github.com/username/weather",
-      tech: ["Vue.js", "Chart.js", "Weather API", "Tailwind"]
-    },
-    {
-      id: 4,
-      name: "Financial Planner",
-      description: "Analytics dashboard for social media metrics with data visualization",
-      image: "/src/assets/images/investiqo.png",
-      liveUrl: "https://demo-analytics.com",
-      githubUrl: "https://github.com/username/analytics",
-      tech: ["React", "D3.js", "Express", "PostgreSQL"]
-    },
-    {
-      id: 5,
-      name: "CodeBook- Ecommerce Platform",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
-      image: "/src/assets/images/codebook.png",
-      liveUrl: "https://demo-crypto.com",
-      githubUrl: "https://github.com/username/crypto",
-      tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
-    },
-    {
-      id: 6,
       name: "Interwin",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
+      description: "A job search and preparation platform offering job listings, role-based resources, resume building, and interview readiness.",
       image: "/src/assets/images/interwin.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
     },
     {
-      id: 6,
-      name: "BeingKare",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
-      image: "/src/assets/images/beingkare.png",
-      liveUrl: "https://demo-crypto.com",
-      githubUrl: "https://github.com/username/crypto",
-      tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
+      id: 4,
+      name: "Meeting Summarizer",
+      description: "An AI tool that summarizes Zoom and Google Meet recordings with timestamps and concise key-point summaries.",
+      image: "/src/assets/images/vidsummaryai.png",
+      liveUrl: "https://demo-weather.com",
+      githubUrl: "https://github.com/username/weather",
+      tech: ["Vue.js", "Chart.js", "Weather API", "Tailwind"]
     },
-     {
+    {
+      id: 5,
+      name: "Financial Planner",
+      description: "A financial planning assistant that provides tailored investment strategies to help users manage and grow their finances.",
+      image: "/src/assets/images/investiqo.png",
+      liveUrl: "https://demo-analytics.com",
+      githubUrl: "https://github.com/username/analytics",
+      tech: ["React", "D3.js", "Express", "PostgreSQL"]
+    },
+    {
       id: 6,
-      name: "Notification Management System",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
-      image: "/src/assets/images/nms.jpg",
+      name: "CodeBook- Ecommerce Platform",
+      description: "An e-commerce platform to browse and purchase popular coding and technology books across various categories.",
+      image: "/src/assets/images/codebook.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
     },
     {
       id: 7,
-      name: "Weld & metal fabrication",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
+      name: "Notification Management System",
+      description: "A bulk messaging system for sending SMS, emails, and WhatsApp messages to multiple users with broadcasting history tracking using cron jobs.",
+      image: "/src/assets/images/nms.jpg",
+      liveUrl: "https://demo-crypto.com",
+      githubUrl: "https://github.com/username/crypto",
+      tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
+    },
+    
+    {
+      id: 8,
+      name: "BeingKare",
+      description: "An insurance management platform built for a client, covering various types of insurance and guiding users in selecting the right plans.",
+      image: "/src/assets/images/beingkare.png",
+      liveUrl: "https://demo-crypto.com",
+      githubUrl: "https://github.com/username/crypto",
+      tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
+    },
+     
+    {
+      id: 9,
+      name: "Weld & Metal Fabrication",
+      description: "A portfolio website developed for a fabrication startup, showcasing services, projects, and brand identity.",
       image: "/src/assets/images/weldmetalfab.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
     },
     {
-      id: 8,
+      id: 10,
       name: "Riser Realty",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
+      description: "A real estate business website made for a client to display residential and commercial properties available for sale or purchase.",
       image: "/src/assets/images/riserrealty.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
     },
      {
-      id: 9,
+      id: 11,
       name: "Hotel Booking Application",
-      description: "Cryptocurrency portfolio management with real-time price tracking",
+      description: "A digital booking system created for Hotel Ratna Palace, allowing customers to reserve tables based on availability, streamlining business operations.",
       image: "/src/assets/images/hotel.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",

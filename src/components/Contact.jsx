@@ -31,16 +31,16 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: <Mail size={24} />,
+      icon: <Mail size={20} />,
       title: "Email",
       value: "pujaritulsi231@gmail.com",
       href: "mailto:pujaritulsi231@gmail.com"
     },
     {
-      icon: <Linkedin size={24} />,
+      icon: <Linkedin size={20} />,
       title: "LinkedIn",
       value: "Connect with me",
-      href: "https://linkedin.com/in/yourprofile"
+      href: "https://www.linkedin.com/in/tulsi-pujari-b72384272/"
     }
   ];
 
@@ -122,29 +122,29 @@ const ContactSection = () => {
 
   const ToastNotification = () => (
     showToast && (
-      <div className="fixed top-6 right-6 z-50 max-w-md animate-in slide-in-from-top-2 duration-300">
-        <div className={`relative p-4 rounded-2xl shadow-2xl backdrop-blur-xl border-2 ${
+      <div className="fixed top-4 left-4 right-4 sm:top-6 sm:right-6 sm:left-auto z-50 max-w-sm sm:max-w-md mx-auto sm:mx-0 animate-in slide-in-from-top-2 duration-300">
+        <div className={`relative p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-2xl backdrop-blur-xl border-2 ${
           toastType === 'success' 
             ? 'bg-green-500/20 border-green-500/50 text-green-100' 
             : 'bg-red-500/20 border-red-500/50 text-red-100'
         }`}>
-          <div className="flex items-start gap-3">
-            <div className={`p-2 rounded-full ${
+          <div className="flex items-start gap-2 sm:gap-3">
+            <div className={`p-1.5 sm:p-2 rounded-full ${
               toastType === 'success' ? 'bg-green-500/30' : 'bg-red-500/30'
             }`}>
               {toastType === 'success' ? (
-                <CheckCircle size={20} className="text-green-300" />
+                <CheckCircle size={16} className="text-green-300 sm:w-5 sm:h-5" />
               ) : (
-                <XCircle size={20} className="text-red-300" />
+                <XCircle size={16} className="text-red-300 sm:w-5 sm:h-5" />
               )}
             </div>
-            <div className="flex-1">
-              <h4 className={`font-semibold mb-1 ${
+            <div className="flex-1 min-w-0">
+              <h4 className={`font-semibold mb-1 text-sm sm:text-base ${
                 toastType === 'success' ? 'text-green-200' : 'text-red-200'
               }`}>
                 {toastType === 'success' ? 'Success!' : 'Error!'}
               </h4>
-              <p className={`text-sm leading-relaxed ${
+              <p className={`text-xs sm:text-sm leading-relaxed ${
                 toastType === 'success' ? 'text-green-100' : 'text-red-100'
               }`}>
                 {toastMessage}
@@ -156,7 +156,7 @@ const ContactSection = () => {
                 toastType === 'success' ? 'text-green-300' : 'text-red-300'
               }`}
             >
-              <X size={16} />
+              <X size={14} className="sm:w-4 sm:h-4" />
             </button>
           </div>
           
@@ -170,36 +170,36 @@ const ContactSection = () => {
     <>
       <ToastNotification />
       
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900 py-20 px-4">
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16 animate-in fade-in-0 slide-in-from-top-4 duration-800">
-            <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-white via-purple-200 to-purple-300 bg-clip-text text-transparent tracking-tight mb-4">
+          <div className="text-center mb-12 sm:mb-16 animate-in fade-in-0 slide-in-from-top-4 duration-800">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-white via-purple-200 to-purple-300 bg-clip-text text-transparent tracking-tight mb-3 sm:mb-4 leading-tight">
               Get In Touch
             </h2>
-            <p className="text-gray-300 text-lg font-light max-w-2xl mx-auto">
+            <p className="text-gray-300 text-base sm:text-lg font-light max-w-2xl mx-auto px-4 sm:px-0 leading-relaxed">
               Have a project in mind or just want to chat? I'd love to hear from you. 
               Let's create something amazing together.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
             {/* Contact Form */}
             <div className="order-2 lg:order-1 animate-in fade-in-0 slide-in-from-left-8 duration-800">
-              <div className="bg-gray-800/60 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 lg:p-10 hover:bg-gray-800/70 transition-all duration-500">
-                <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                  <MessageSquare className="text-purple-400" size={28} />
+              <div className="bg-gray-800/60 backdrop-blur-xl border border-gray-700/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 hover:bg-gray-800/70 transition-all duration-500">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                  <MessageSquare className="text-purple-400" size={24} />
                   Send Message
                 </h3>
 
-                <div className="space-y-6">
+                <div className="space-y-5 sm:space-y-6">
                   {/* Name Field */}
                   <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-500 delay-100">
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-2">
                       Full Name
                     </label>
                     <div className="relative">
-                      <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                      <User className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
                       <input
                         type="text"
                         id="name"
@@ -207,7 +207,7 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-12 pr-4 py-4 bg-gray-900/50 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                        className="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 bg-gray-900/50 border border-gray-600/50 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 text-sm sm:text-base"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -219,7 +219,7 @@ const ContactSection = () => {
                       Email Address
                     </label>
                     <div className="relative">
-                      <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                      <Mail className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
                       <input
                         type="email"
                         id="email"
@@ -227,7 +227,7 @@ const ContactSection = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-12 pr-4 py-4 bg-gray-900/50 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                        className="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 bg-gray-900/50 border border-gray-600/50 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 text-sm sm:text-base"
                         placeholder="Enter your email address"
                       />
                     </div>
@@ -239,15 +239,15 @@ const ContactSection = () => {
                       Message
                     </label>
                     <div className="relative">
-                      <MessageSquare className="absolute left-4 top-4 text-gray-400" size={20} />
+                      <MessageSquare className="absolute left-3 sm:left-4 top-3 sm:top-4 text-gray-400" size={18} />
                       <textarea
                         id="msg"
                         name="msg"
                         value={formData.msg}
                         onChange={handleInputChange}
                         required
-                        rows={6}
-                        className="w-full pl-12 pr-4 py-4 bg-gray-900/50 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 resize-none"
+                        rows={5}
+                        className="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 bg-gray-900/50 border border-gray-600/50 rounded-lg sm:rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 resize-none text-sm sm:text-base"
                         placeholder="Tell me about your project or just say hello..."
                       />
                     </div>
@@ -256,9 +256,9 @@ const ContactSection = () => {
                   {/* Submit Button */}
                   <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-500 delay-400">
                     <button
-                      type="submit"
+                      onClick={handleSubmit}
                       disabled={isSubmitting}
-                      className={`w-full py-4 px-6 rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95 ${
+                      className={`w-full py-3 sm:py-4 px-6 rounded-lg sm:rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 transform hover:scale-105 active:scale-95 text-sm sm:text-base ${
                         isSubmitting
                           ? 'bg-gray-600 cursor-not-allowed'
                           : 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 hover:shadow-lg hover:shadow-purple-500/25'
@@ -266,12 +266,12 @@ const ContactSection = () => {
                     >
                       {isSubmitting ? (
                         <>
-                          <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                          <div className="w-4 h-4 sm:w-5 sm:h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
                           Sending...
                         </>
                       ) : (
                         <>
-                          <Send size={20} />
+                          <Send size={18} />
                           Send Message
                         </>
                       )}
@@ -280,16 +280,16 @@ const ContactSection = () => {
 
                   {/* Status Messages */}
                   {submitStatus === 'success' && (
-                    <div className="text-center p-3 bg-green-500/10 border border-green-500/20 rounded-xl animate-in fade-in-0 scale-in-95 duration-300">
-                      <p className="text-green-400 font-medium text-sm">
+                    <div className="text-center p-3 bg-green-500/10 border border-green-500/20 rounded-lg sm:rounded-xl animate-in fade-in-0 scale-in-95 duration-300">
+                      <p className="text-green-400 font-medium text-xs sm:text-sm">
                         ✅ Message sent successfully!
                       </p>
                     </div>
                   )}
 
                   {submitStatus === 'error' && (
-                    <div className="text-center p-3 bg-red-500/10 border border-red-500/20 rounded-xl animate-in fade-in-0 scale-in-95 duration-300">
-                      <p className="text-red-400 font-medium text-sm">
+                    <div className="text-center p-3 bg-red-500/10 border border-red-500/20 rounded-lg sm:rounded-xl animate-in fade-in-0 scale-in-95 duration-300">
+                      <p className="text-red-400 font-medium text-xs sm:text-sm">
                         ❌ Failed to send. Please try again.
                       </p>
                     </div>
@@ -299,28 +299,28 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="order-1 lg:order-2 space-y-8 animate-in fade-in-0 slide-in-from-right-8 duration-800">
-              <div className="bg-gray-800/60 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 lg:p-10">
-                <h3 className="text-2xl font-bold text-white mb-8">
+            <div className="order-1 lg:order-2 space-y-6 sm:space-y-8 animate-in fade-in-0 slide-in-from-right-8 duration-800">
+              <div className="bg-gray-800/60 backdrop-blur-xl border border-gray-700/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">
                   Let's Connect
                 </h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {contactInfo.map((info, index) => (
                     <a
                       key={index}
                       href={info.href}
                       target={info.title === 'LinkedIn' ? '_blank' : undefined}
                       rel={info.title === 'LinkedIn' ? 'noopener noreferrer' : undefined}
-                      className="flex items-center gap-4 p-4 bg-gray-900/30 rounded-xl hover:bg-gray-900/50 transition-all duration-300 group cursor-pointer border border-gray-600/30 hover:border-purple-500/30 transform hover:scale-105 hover:translate-x-2"
+                      className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-900/30 rounded-lg sm:rounded-xl hover:bg-gray-900/50 transition-all duration-300 group cursor-pointer border border-gray-600/30 hover:border-purple-500/30 transform hover:scale-105 hover:translate-x-1 sm:hover:translate-x-2"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
-                      <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400 group-hover:bg-purple-500/30 group-hover:text-purple-300 transition-all duration-300">
+                      <div className="p-2 sm:p-3 bg-purple-500/20 rounded-lg text-purple-400 group-hover:bg-purple-500/30 group-hover:text-purple-300 transition-all duration-300 flex-shrink-0">
                         {info.icon}
                       </div>
-                      <div>
-                        <p className="text-gray-400 text-sm font-medium">{info.title}</p>
-                        <p className="text-white font-semibold">{info.value}</p>
+                      <div className="min-w-0 flex-1">
+                        <p className="text-gray-400 text-xs sm:text-sm font-medium">{info.title}</p>
+                        <p className="text-white font-semibold text-sm sm:text-base truncate">{info.value}</p>
                       </div>
                     </a>
                   ))}
@@ -328,11 +328,11 @@ const ContactSection = () => {
               </div>
 
               {/* Additional Info */}
-              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-purple-500/20 rounded-3xl p-8 animate-in fade-in-0 slide-in-from-bottom-4 duration-800 delay-300">
-                <h4 className="text-xl font-bold text-white mb-4">
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl border border-purple-500/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 animate-in fade-in-0 slide-in-from-bottom-4 duration-800 delay-300">
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
                   Quick Response
                 </h4>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   I typically respond to messages within 24 hours. Whether you have a project proposal, 
                   collaboration idea, or just want to connect, I'm always excited to hear from fellow 
                   developers and potential clients.

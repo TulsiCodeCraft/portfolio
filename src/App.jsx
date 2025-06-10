@@ -1,5 +1,3 @@
-import React from 'react';
-import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -7,8 +5,20 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
+  // Smooth scroll behavior for the entire app
+  useEffect(() => {
+    // Ensure smooth scrolling is enabled
+    document.documentElement.style.scrollBehavior = 'smooth';
+    
+    return () => {
+      document.documentElement.style.scrollBehavior = 'auto';
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <div className="relative">
@@ -23,14 +33,39 @@ function App() {
         </div>
 
         <Navbar />
+        
         <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Experience />
-          <Contact />
+          {/* Hero Section */}
+          <section id="home" className="min-h-screen">
+            <Hero />
+          </section>
+
+          {/* About Section */}
+          <section id="about" className="min-h-screen">
+            <About />
+          </section>
+
+          {/* Skills Section */}
+          <section id="skills" className="min-h-screen">
+            <Skills />
+          </section>
+
+          {/* Projects Section */}
+          <section id="projects" className="min-h-screen">
+            <Projects />
+          </section>
+
+          {/* Experience Section */}
+          <section id="experience" className="min-h-screen">
+            <Experience />
+          </section>
+
+          {/* Contact Section */}
+          <section id="contact" className="min-h-screen">
+            <Contact />
+          </section>
         </main>
+
         <Footer />
       </div>
     </div>

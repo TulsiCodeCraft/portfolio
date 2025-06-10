@@ -6,17 +6,17 @@ const Footer = () => {
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:tulsi@gmail.com'
+      href: 'mailto:pujaritulsi231@gmail.com'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in'
+      href: 'https://www.linkedin.com/in/tulsi-pujari-b72384272/'
     },
     {
       icon: Github,
       label: 'Github',
-      href: 'https://github.com'
+      href: 'https://github.com/TulsiCodeCraft'
     }
   ];
 
