@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       id: 1,
       name: "Zeecare",
       description: "A doctor appointment and patient management system for Zeecare Medical, featuring multi-department scheduling and a doctor admin panel.",
-      image: "/public/images/zeecare.png",
+      image: "/images/zeecare.png",
       liveUrl: "https://demo-ecommerce.com",
       githubUrl: "https://github.com/username/ecommerce",
       tech: ["React", "Node.js", "MongoDB", "Stripe"]
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       id: 2,
       name: "Educrew",
       description: "A collaborative study platform where users can form groups, assign tasks, and track study progress for better virtual learning.",
-      image: "/public/images/educrew.png",
+      image: "/images/educrew.png",
       liveUrl: "https://demo-taskapp.com",
       githubUrl: "https://github.com/username/taskapp",
       tech: ["Next.js", "TypeScript", "Prisma", "Socket.io"]
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       id: 3,
       name: "Interwin",
       description: "A job search and preparation platform offering job listings, role-based resources, resume building, and interview readiness.",
-      image: "/public/images/interwin.png",
+      image: "/images/interwin.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
       id: 4,
       name: "Meeting Summarizer",
       description: "An AI tool that summarizes Zoom and Google Meet recordings with timestamps and concise key-point summaries.",
-      image: "/public/images/vidsummaryai.png",
+      image: "/images/vidsummaryai.png",
       liveUrl: "https://demo-weather.com",
       githubUrl: "https://github.com/username/weather",
       tech: ["Vue.js", "Chart.js", "Weather API", "Tailwind"]
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
       id: 5,
       name: "Financial Planner",
       description: "A financial planning assistant that provides tailored investment strategies to help users manage and grow their finances.",
-      image: "/public/images/investiqo.png",
+      image: "/images/investiqo.png",
       liveUrl: "https://demo-analytics.com",
       githubUrl: "https://github.com/username/analytics",
       tech: ["React", "D3.js", "Express", "PostgreSQL"]
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
       id: 6,
       name: "CodeBook- Ecommerce Platform",
       description: "An e-commerce platform to browse and purchase popular coding and technology books across various categories.",
-      image: "/public/images/codebook.png",
+      image: "/images/codebook.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
       id: 7,
       name: "Notification Management System",
       description: "A bulk messaging system for sending SMS, emails, and WhatsApp messages to multiple users with broadcasting history tracking using cron jobs.",
-      image: "/public/images/nms.jpg",
+      image: "/images/nms.jpg",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
       id: 8,
       name: "BeingKare",
       description: "An insurance management platform built for a client, covering various types of insurance and guiding users in selecting the right plans.",
-      image: "/public/images/beingkare.png",
+      image: "/images/beingkare.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
@@ -85,7 +85,7 @@ const ProjectsSection = () => {
       id: 9,
       name: "Weld & Metal Fabrication",
       description: "A portfolio website developed for a fabrication startup, showcasing services, projects, and brand identity.",
-      image: "/public/images/weldmetalfab.png",
+      image: "/images/weldmetalfab.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
       id: 10,
       name: "Riser Realty",
       description: "A real estate business website made for a client to display residential and commercial properties available for sale or purchase.",
-      image: "/public/images/riserrealty.png",
+      image: "/images/riserrealty.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
@@ -103,7 +103,7 @@ const ProjectsSection = () => {
       id: 11,
       name: "Hotel Booking Application",
       description: "A digital booking system created for Hotel Ratna Palace, allowing customers to reserve tables based on availability, streamlining business operations.",
-      image: "/public/images/hotel.png",
+      image: "/images/hotel.png",
       liveUrl: "https://demo-crypto.com",
       githubUrl: "https://github.com/username/crypto",
       tech: ["React Native", "Redux", "CoinGecko API", "Firebase"]
