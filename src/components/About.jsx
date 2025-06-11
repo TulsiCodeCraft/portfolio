@@ -101,7 +101,7 @@ const About = () => {
                 {/* Image */}
                 <div className="relative bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl sm:rounded-3xl p-1.5 sm:p-2 shadow-2xl">
                   <img
-                    src="/src/assets/images/tulsi_photo.jpg"
+                    src="/public/images/tulsi_photo.jpg"
                     alt="Tulsi Pujari"
                     className="w-64 h-80 sm:w-80 sm:h-96 lg:w-[26rem] lg:h-[32rem] object-cover rounded-xl sm:rounded-2xl shadow-2xl group-hover:scale-105 transition-all duration-700 filter brightness-105 group-hover:brightness-110"
                   />

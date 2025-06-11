@@ -63,7 +63,7 @@ const Hero = () => {
   const downloadResume = () => {
     // Create a link element to trigger download
     const link = document.createElement('a');
-    link.href = '/src/assets/tulsiUpdatedResume.pdf'; // Replace with your actual PDF file path
+    link.href = '/public/tulsiUpdatedResume.pdf'; // Replace with your actual PDF file path
     link.download = 'Tulsi_Pujari_Resume.pdf'; // The name for the downloaded file
     link.target = '_blank'; // Open in new tab as fallback
     
